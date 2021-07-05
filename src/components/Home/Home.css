@@ -1,0 +1,17 @@
+ul li {
+  display: inline-flex;
+  margin: 20px 32px 20px 0;
+}
+
+.list {
+  border: 1px solid #666;
+  border-radius: 16px;
+  background: #ddd;
+  padding: 8px 64px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.list:hover {
+  background: #eee;
+}

@@ -1,0 +1,105 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+button {
+  border-radius: 4px;
+  padding: 8px;
+}
+
+button:enabled {
+  cursor: pointer;
+}
+
+.login-button,
+.back-button {
+  transition: 0.3s;
+}
+
+.login-button {
+  border: none;
+  font-weight: lighter;
+  color: #fff;
+  background: #06f;
+}
+
+.login-button:hover {
+  background: #08f;
+}
+
+.back-button {
+  color: #06f;
+  background: #fff;
+  border: 1px solid #fff;
+}
+
+.back-button:hover {
+  border: 1px solid #ccc;
+}
+
+.back-button::before {
+  content: '< ';
+}
+
+.link {
+  text-decoration: none;
+  color: #000;
+}
+
+.form-container {
+  position: relative;
+}
+
+.form {
+  left: -135px;
+  position: absolute;
+  width: 200px;
+  margin: 14px;
+  padding: 20px;
+  background: #eee;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px -4px rgb(9 30 66 / 25%), 0 0 0 1px rgb(9 30 66 / 8%);
+}
+
+.form::before {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  right: calc(50% - 10px);
+  top: -12px;
+  border-right: 11px solid transparent;
+  border-left: 11px solid transparent;
+  border-bottom: 11px solid #eee;
+}
+
+input[type='text'],
+input[type='email'],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button[type='submit'] {
+  width: 100%;
+}
+
+button[type='submit']:enabled {
+  background: #090;
+  color: white;
+  border: none;
+  transition: 0.3s;
+}
+
+button[type='submit']:enabled:hover {
+  background: #0a0;
+}
